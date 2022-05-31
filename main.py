@@ -12,19 +12,19 @@ window = Tk()
 window.title("Mile to Km Converter")
 window.config(padx=20, pady=20)
 
-is_equal_label = Label(text="is equal to", font=("Arial", 18, "normal"))
+is_equal_label = Label(text="is equal to", font=("Arial", 12, "bold"))
 is_equal_label.grid(column=0, row=1)
 
 miles_input = Entry(width="5")
 miles_input.grid(column=1,row=0)
 
-miles_label = Label(text="Miles", font=("Arial", 18, "normal"))
+miles_label = Label(text="Miles", font=("Arial", 12, "normal"))
 miles_label.grid(column=2, row=0)
 
-km_output = Label(text = "0",font=("Arial", 18, "normal"))
+km_output = Label(text = "0",font=("Arial", 12, "normal"))
 km_output.grid(column=1, row=1)
 
-km_label = Label(text="Km", font=("Arial", 18, "normal"))
+km_label = Label(text="Km", font=("Arial", 12, "normal"))
 km_label.grid(column=2, row=1)
 
 button = Button(text="Calculate", command=miles_to_km)
