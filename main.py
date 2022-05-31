@@ -14,35 +14,29 @@ window.config(padx=20, pady=20)
 
 #Label
 main_label = Label(text="is equal to", font=("Arial", 18, "normal"))
-main_label.grid(column=0, row=2)
+main_label.grid(column=0, row=1)
 
 #Entry
 input = Entry(width="10")
-input.grid(column=1,row=1)
+input.grid(column=1,row=0)
 
 # Miles Label
 miles_label = Label(text="Miles", font=("Arial", 18, "normal"))
-miles_label.grid(column=2, row=1)
+miles_label.grid(column=2, row=0)
 
 
 # Km output
 km_output = Label(font=("Arial", 18, "normal"))
-km_output.grid(column=1, row=2)
+km_output.grid(column=1, row=1)
 
 # Km Label
 km_label = Label(text="Km", font=("Arial", 18, "normal"))
-km_label.grid(column=2, row=2)
+km_label.grid(column=2, row=1)
 
 
 #Calculate Button
 button = Button(text="Calculate", command=button_clicked)
 button.grid(column=1, row=3)
-
-
-
-
-
-
 
 
 window.mainloop()
